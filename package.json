@@ -8,10 +8,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/nathanp99/ExStream-Atom.git"
+    "url": "https://github.com/nathanp99/ExStream-syntax-highlighter.git"
   },
   "bugs": {
-    "url": "https://github.com/nathanp99/ExStream-Atom/issues"
+    "url": "https://github.com/nathanp99/ExStream-syntax-highlighter/issues"
   },
   "license": "MIT"
 }
