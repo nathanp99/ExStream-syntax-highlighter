@@ -1,0 +1,87 @@
+'fileTypes' : [
+  'spl'
+]
+'name' : 'ExStream'
+'patterns' : [
+  {
+    'include' : '#main'
+  }
+]
+'scopeName' : 'source.ExStream'
+'uuid' : ''
+'repository' : {
+  'main' : {
+    'patterns' : [
+      {
+        'match' : '( \\- )'
+        'name' : 'constant.other.symbol.ExStream'
+      }
+      {
+        'match' : '(\\+)'
+        'name' : 'constant.other.symbol.ExStream'
+      }
+      {
+        'match' : '(\\*)'
+        'name' : 'constant.other.symbol.ExStream'
+      }
+      {
+        'match' : '(\\$.*)'
+        'name' : 'comment.ExStream'
+      }
+      {
+        'match' : '(set)'
+        'name' : 'entity.name.class.ExStream'
+      }
+      {
+        'match' : '(inStreamCount|pastCount|past)'
+        'name' : 'string.ExStream'
+      }
+      {
+        'match' : '(s([0-9]*)*)'
+        'name' : 'keyword.ExStream'
+      }
+      {
+        'begin' : '(\\.(in|out))'
+        'beginCaptures' : {
+          '1' : {
+            'name' : 'entity.name.type.ExStream'
+          }
+        }
+        'patterns' : [
+          {
+            'include' : '#main__1'
+          }
+        ]
+        'end' : '(([0-9]*)*)'
+        'endCaptures' : {
+          '1' : {
+            'name' : 'constant.language.ExStream'
+          }
+        }
+      }
+      {
+        'include' : '#numeric'
+      }
+    ]
+  }
+  'main__1' : {
+    'patterns' : [
+      {
+        'match' : '(\\\\(?:\\\\|"))'
+        'name' : 'text.ExStream'
+      }
+    ]
+  }
+  'numeric' : {
+    'patterns' : [
+      {
+        'match' : '(\\b\\d+)'
+        'name' : 'constant.numeric.ExStream'
+      }
+      {
+        'match' : '((\\-)?\\d+)'
+        'name' : 'constant.numeric.ExStream'
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ExStream",
+  "version": "0.0.0",
+  "description": "ExStream language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanp99/ExStream-Atom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nathanp99/ExStream-Atom/issues"
+  },
+  "license": "MIT"
+}
